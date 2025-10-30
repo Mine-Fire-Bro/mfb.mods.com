@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dimension Explorer Mod - BlockCraft Studios</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="nav-bar">
+    <div class="nav-container">
+      <div class="nav-content">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-cube"></i>
+          </div>
+          <span class="logo-text">BlockCraft Studios</span>
+        </a>
+        
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="mods.html" class="nav-link">All Mods</a>
+          <a href="about.html" class="nav-link">About</a>
+          <button id="theme-toggle" class="theme-btn">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+        
+        <button id="mobile-menu-btn" class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      
+      <div id="mobile-menu" class="mobile-menu hidden">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="mods.html" class="mobile-link">All Mods</a>
+        <a href="about.html" class="mobile-link">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mod Hero -->
+  <div class="mod-hero" style="background: linear-gradient(135deg, #3b82f6 0%, #4f46e5 100%);">
+    <div class="container">
+      <i class="fas fa-globe mod-hero-icon"></i>
+      <h1 class="mod-hero-title">Dimension Explorer</h1>
+      <p class="mod-hero-subtitle">Journey through 5 breathtaking new dimensions</p>
+      <div class="mod-hero-tags">
+        <span class="mod-hero-tag">Version 1.0.0</span>
+        <span class="mod-hero-tag">Minecraft 1.20.1</span>
+        <span class="mod-hero-tag">Forge</span>
+      </div>
+      <div class="mod-hero-buttons">
+        <a href="#" class="btn btn-download">
+          <i class="fas fa-download"></i> Download (24.3 MB)
+        </a>
+        <a href="https://youtube.com/@YourChannel" target="_blank" class="btn" style="background-color: rgba(255,255,255,0.1); color: white;">
+          <i class="fab fa-youtube"></i> Watch Tour
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mod Details -->
+  <section class="mod-detail-section">
+    <div class="container">
+      <div class="mod-detail-grid">
+        <div>
+          <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem;">Overview</h2>
+          <p style="font-size: 1.125rem; color: #4b5563; line-height: 1.8; margin-bottom: 1rem;">
+            Dimension Explorer opens portals to five extraordinary new dimensions, each with unique biomes, resources, structures, and challenges. Venture beyond the Overworld and discover worlds you've never imagined.
+          </p>
+          <p style="font-size: 1.125rem; color: #4b5563; line-height: 1.8;">
+            From floating crystal islands to volcanic wastelands, each dimension offers exclusive materials, mobs, and dungeons. Are you ready to become a true explorer?
+          </p>
+        </div>
+        
+        <div>
+          <h3 style="font-size: 2rem; font-weight: 700; margin-bottom: 1rem;">Key Features</h3>
+          <ul class="feature-list">
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">5 fully realized dimensions with unique themes</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">Custom biomes, blocks, and materials</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">Dimension-specific mobs and bosses</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">Ancient structures and dungeons to explore</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">Unique portal mechanics for each dimension</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">Progression system through dimensions</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <h3 class="info-box-title">The Five Dimensions</h3>
+        <div style="display: grid; gap: 2rem; margin-top: 1.5rem;">
+          
+          <div style="padding: 1.5rem; background: linear-gradient(135deg, #dbeafe, #bfdbfe); border-radius: 12px;">
+            <h4 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem; color: #1e40af;">
+              <i class="fas fa-gem"></i> Crystal Realm
+            </h4>
+            <p style="color: #1f2937; margin-bottom: 0.75rem; line-height: 1.6;">
+              Floating islands made of pure crystal that glow with ethereal light. Home to crystalline creatures and rare gems.
+            </p>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <span class="tag tag-blue">Difficulty: Easy</span>
+              <span class="tag tag-purple">Portal: Diamond Frame + Crystal Shard</span>
+            </div>
+          </div>
+
+          <div style="padding: 1.5rem; background: linear-gradient(135deg, #fed7aa, #fdba74); border-radius: 12px;">
+            <h4 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem; color: #c2410c;">
+              <i class="fas fa-mountain"></i> Volcanic Wastes
+            </h4>
+            <p style="color: #1f2937; margin-bottom: 0.75rem; line-height: 1.6;">
+              A treacherous land of lava flows and obsidian mountains. Contains the rarest ores but extremely dangerous.
+            </p>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <span class="tag tag-red">Difficulty: Hard</span>
+              <span class="tag tag-yellow">Portal: Obsidian Frame + Magma Core</span>
+            </div>
+          </div>
+
+          <div style="padding: 1.5rem; background: linear-gradient(135deg, #d1fae5, #a7f3d0); border-radius: 12px;">
+            <h4 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem; color: #065f46;">
+              <i class="fas fa-tree"></i> Eternal Forest
+            </h4>
+            <p style="color: #1f2937; margin-bottom: 0.75rem; line-height: 1.6;">
+              An endless forest with trees that touch the sky. Peaceful but filled with ancient secrets and hidden temples.
+            </p>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <span class="tag tag-green">Difficulty: Medium</span>
+              <span class="tag tag-green">Portal: Oak Frame + Nature Essence</span>
+            </div>
+          </div>
+
+          <div style="padding: 1.5rem; background: linear-gradient(135deg, #e9d5ff, #d8b4fe); border-radius: 12px;">
+            <h4 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem; color: #6b21a8;">
+              <i class="fas fa-moon"></i> Shadow Dimension
+            </h4>
+            <p style="color: #1f2937; margin-bottom: 0.75rem; line-height: 1.6;">
+              A dark mirror of the Overworld where shadows come alive. Only accessible at night with special rituals.
+            </p>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <span class="tag tag-purple">Difficulty: Very Hard</span>
+              <span class="tag tag-purple">Portal: Blackstone Frame + Shadow Pearl</span>
+            </div>
+          </div>
+
+          <div style="padding: 1.5rem; background: linear-gradient(135deg, #fef3c7, #fde68a); border-radius: 12px;">
+            <h4 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem; color: #92400e;">
+              <i class="fas fa-sun"></i> Sky Kingdom
+            </h4>
+            <p style="color: #1f2937; margin-bottom: 0.75rem; line-height: 1.6;">
+              Majestic floating cities above the clouds. Features unique sky-dwelling creatures and ancient civilizations.
+            </p>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <span class="tag tag-yellow">Difficulty: Medium</span>
+              <span class="tag tag-blue">Portal: Quartz Frame + Sky Crystal</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="alert-box">
+        <h4 class="alert-title">
+          <i class="fas fa-exclamation-triangle"></i> Important Tips
+        </h4>
+        <ul class="requirements-list">
+          <li>Always bring food, tools, and building blocks when entering new dimensions</li>
+          <li>Set up a base near your portal for quick escapes</li>
+          <li>Each dimension has unique survival challenges - prepare accordingly</li>
+          <li>Some dimensions have different day/night cycles or gravity</li>
+          <li>Portal items can only be obtained by defeating bosses in previous dimensions</li>
+          <li>Keep your coordinates written down - getting lost is easy!</li>
+        </ul>
+      </div>
+
+      <div class="info-box">
+        <h3 class="info-box-title">Progression Guide</h3>
+        <p style="color: #4b5563; margin-bottom: 1rem; line-height: 1.6;">
+          The dimensions are designed to be explored in order of difficulty. Start with the Crystal Realm to gather materials needed for the other dimensions:
+        </p>
+        <ol class="requirements-list">
+          <li><strong>Crystal Realm</strong> → Gather crystal shards and learn portal mechanics</li>
+          <li><strong>Eternal Forest</strong> → Collect nature essence and ancient wood</li>
+          <li><strong>Sky Kingdom</strong> → Obtain sky crystals and advanced materials</li>
+          <li><strong>Volcanic Wastes</strong> → Mine rare ores and defeat fire bosses</li>
+          <li><strong>Shadow Dimension</strong> → Face the ultimate challenge and get legendary loot</li>
+        </ol>
+      </div>
+
+      <div class="info-box">
+        <h3 class="info-box-title">System Requirements</h3>
+        <ul class="requirements-list">
+          <li>Minecraft Version: 1.20.1</li>
+          <li>Mod Loader: Forge 47.0.0 or higher</li>
+          <li>RAM: At least 8GB allocated (large world generation)</li>
+          <li>Storage: Additional 2GB for dimension data</li>
+          <li>GPU: Strongly recommended for optimal performance</li>
+          <li>Compatible with: Biomes O' Plenty, JourneyMap, and most structure mods</li>
+        </ul>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <h3 style="font-size: 2rem; font-weight: 700; margin-bottom: 1rem;">Ready to Explore?</h3>
+        <p style="color: #4b5563; margin-bottom: 1.5rem; font-size: 1.125rem;">
+          Share your dimension discoveries and get exploration tips from the community!
+        </p>
+        <a href="https://discord.gg/yourinvite" target="_blank" class="btn btn-gradient">
+          <i class="fab fa-discord"></i> Join Discord
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> BlockCraft Studios. All rights reserved.</p>
+    <p class="footer-disclaimer">Minecraft is © Mojang Studios. This site is not affiliated with Mojang.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

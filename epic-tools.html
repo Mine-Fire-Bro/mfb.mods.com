@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Epic Tools Mod - BlockCraft Studios</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="nav-bar">
+    <div class="nav-container">
+      <div class="nav-content">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-cube"></i>
+          </div>
+          <span class="logo-text">BlockCraft Studios</span>
+        </a>
+        
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="mods.html" class="nav-link">All Mods</a>
+          <a href="about.html" class="nav-link">About</a>
+          <button id="theme-toggle" class="theme-btn">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+        
+        <button id="mobile-menu-btn" class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      
+      <div id="mobile-menu" class="mobile-menu hidden">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="mods.html" class="mobile-link">All Mods</a>
+        <a href="about.html" class="mobile-link">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mod Hero -->
+  <div class="mod-hero" style="background: linear-gradient(135deg, #fb923c 0%, #dc2626 100%);">
+    <div class="container">
+      <i class="fas fa-hammer mod-hero-icon"></i>
+      <h1 class="mod-hero-title">Epic Tools Mod</h1>
+      <p class="mod-hero-subtitle">Transform your mining experience with legendary equipment</p>
+      <div class="mod-hero-tags">
+        <span class="mod-hero-tag">Version 1.2.0</span>
+        <span class="mod-hero-tag">Minecraft 1.20.1</span>
+        <span class="mod-hero-tag">Forge</span>
+      </div>
+      <div class="mod-hero-buttons">
+        <a href="#" class="btn btn-download">
+          <i class="fas fa-download"></i> Download (12.4 MB)
+        </a>
+        <a href="https://youtube.com/@YourChannel" target="_blank" class="btn" style="background-color: rgba(255,255,255,0.1); color: white;">
+          <i class="fab fa-youtube"></i> Watch Tutorial
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mod Details -->
+  <section class="mod-detail-section">
+    <div class="container">
+      <div class="mod-detail-grid">
+        <div>
+          <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem;">Overview</h2>
+          <p style="font-size: 1.125rem; color: #4b5563; line-height: 1.8; margin-bottom: 1rem;">
+            Epic Tools revolutionizes your Minecraft experience by introducing over 50 powerful tools, each with unique abilities and custom enchantments. From mining to combat, these tools will make you feel like a true legend.
+          </p>
+          <p style="font-size: 1.125rem; color: #4b5563; line-height: 1.8;">
+            Craft legendary pickaxes that mine entire veins at once, wield hammers that create shockwaves, and discover ancient tools with mysterious powers.
+          </p>
+        </div>
+        
+        <div>
+          <h3 style="font-size: 2rem; font-weight: 700; margin-bottom: 1rem;">Key Features</h3>
+          <ul class="feature-list">
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">50+ unique tools with special abilities</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">Custom enchantments exclusive to epic tools</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">Progressive tier system from Iron to Mythical</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">Fully balanced for multiplayer servers</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">Compatible with most popular mods</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">Custom particle effects and sounds</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <h3 class="info-box-title">Showcase Gallery</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item" style="background: linear-gradient(135deg, #fb923c, #dc2626);">
+            <i class="fas fa-pickaxe"></i>
+          </div>
+          <div class="gallery-item" style="background: linear-gradient(135deg, #3b82f6, #2563eb);">
+            <i class="fas fa-hammer"></i>
+          </div>
+          <div class="gallery-item" style="background: linear-gradient(135deg, #a855f7, #9333ea);">
+            <i class="fas fa-wrench"></i>
+          </div>
+          <div class="gallery-item" style="background: linear-gradient(135deg, #10b981, #059669);">
+            <i class="fas fa-gem"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert-box">
+        <h4 class="alert-title">
+          <i class="fas fa-info-circle"></i> Installation Instructions
+        </h4>
+        <ol class="requirements-list">
+          <li>Make sure you have Minecraft Forge 1.20.1 installed</li>
+          <li>Download the Epic Tools mod file (.jar)</li>
+          <li>Navigate to your Minecraft mods folder</li>
+          <li>Place the downloaded .jar file in the mods folder</li>
+          <li>Launch Minecraft with the Forge profile</li>
+          <li>Enjoy crafting epic tools!</li>
+        </ol>
+      </div>
+
+      <div class="info-box">
+        <h3 class="info-box-title">System Requirements</h3>
+        <ul class="requirements-list">
+          <li>Minecraft Version: 1.20.1</li>
+          <li>Mod Loader: Forge 47.0.0 or higher</li>
+          <li>RAM: At least 4GB allocated to Minecraft</li>
+          <li>Compatible with: OptiFine, JEI, and most major mods</li>
+        </ul>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <h3 style="font-size: 2rem; font-weight: 700; margin-bottom: 1rem;">Need Help?</h3>
+        <p style="color: #4b5563; margin-bottom: 1.5rem; font-size: 1.125rem;">
+          Join our Discord community for support, suggestions, and to report bugs!
+        </p>
+        <a href="https://discord.gg/yourinvite" target="_blank" class="btn btn-gradient">
+          <i class="fab fa-discord"></i> Join Discord
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> BlockCraft Studios. All rights reserved.</p>
+    <p class="footer-disclaimer">Minecraft is © Mojang Studios. This site is not affiliated with Mojang.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

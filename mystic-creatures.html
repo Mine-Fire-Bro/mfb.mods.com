@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mystic Creatures Mod - BlockCraft Studios</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="nav-bar">
+    <div class="nav-container">
+      <div class="nav-content">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-cube"></i>
+          </div>
+          <span class="logo-text">BlockCraft Studios</span>
+        </a>
+        
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="mods.html" class="nav-link">All Mods</a>
+          <a href="about.html" class="nav-link">About</a>
+          <button id="theme-toggle" class="theme-btn">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+        
+        <button id="mobile-menu-btn" class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      
+      <div id="mobile-menu" class="mobile-menu hidden">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="mods.html" class="mobile-link">All Mods</a>
+        <a href="about.html" class="mobile-link">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mod Hero -->
+  <div class="mod-hero" style="background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);">
+    <div class="container">
+      <i class="fas fa-dragon mod-hero-icon"></i>
+      <h1 class="mod-hero-title">Mystic Creatures</h1>
+      <p class="mod-hero-subtitle">Encounter legendary beasts from myth and legend</p>
+      <div class="mod-hero-tags">
+        <span class="mod-hero-tag">Version 2.0.1</span>
+        <span class="mod-hero-tag">Minecraft 1.20.1</span>
+        <span class="mod-hero-tag">Forge</span>
+      </div>
+      <div class="mod-hero-buttons">
+        <a href="#" class="btn btn-download">
+          <i class="fas fa-download"></i> Download (18.7 MB)
+        </a>
+        <a href="https://youtube.com/@YourChannel" target="_blank" class="btn" style="background-color: rgba(255,255,255,0.1); color: white;">
+          <i class="fab fa-youtube"></i> Watch Showcase
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mod Details -->
+  <section class="mod-detail-section">
+    <div class="container">
+      <div class="mod-detail-grid">
+        <div>
+          <h2 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 1.5rem;">Overview</h2>
+          <p style="font-size: 1.125rem; color: #4b5563; line-height: 1.8; margin-bottom: 1rem;">
+            Mystic Creatures brings the wonder and danger of mythological beasts to your Minecraft world. Encounter over 30 unique creatures, each with advanced AI behaviors, stunning animations, and valuable rare drops.
+          </p>
+          <p style="font-size: 1.125rem; color: #4b5563; line-height: 1.8;">
+            From majestic phoenixes soaring through the skies to fearsome hydras guarding ancient temples, every creature adds depth and excitement to your adventures. Will you befriend them or face them in epic battles?
+          </p>
+        </div>
+        
+        <div>
+          <h3 style="font-size: 2rem; font-weight: 700; margin-bottom: 1rem;">Key Features</h3>
+          <ul class="feature-list">
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">30+ mythical creatures with unique models</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">Advanced AI for realistic behaviors</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">Tameable creatures with special abilities</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">Rare drops and mythical materials</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">Boss creatures with epic loot</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">Custom spawn conditions and habitats</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <h3 class="info-box-title">Creature Types</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item" style="background: linear-gradient(135deg, #ef4444, #dc2626);">
+            <i class="fas fa-fire"></i>
+          </div>
+          <div class="gallery-item" style="background: linear-gradient(135deg, #3b82f6, #1e40af);">
+            <i class="fas fa-water"></i>
+          </div>
+          <div class="gallery-item" style="background: linear-gradient(135deg, #10b981, #047857);">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <div class="gallery-item" style="background: linear-gradient(135deg, #8b5cf6, #6d28d9);">
+            <i class="fas fa-moon"></i>
+          </div>
+        </div>
+        <p style="margin-top: 1rem; color: #4b5563;">
+          Fire, Water, Earth, and Shadow creatures each have unique strengths and weaknesses!
+        </p>
+      </div>
+
+      <div class="alert-box">
+        <h4 class="alert-title">
+          <i class="fas fa-lightbulb"></i> Tips for Survival
+        </h4>
+        <ul class="requirements-list">
+          <li>Always carry water buckets when facing fire creatures</li>
+          <li>Use bait to lure creatures away from their nests</li>
+          <li>Some creatures are passive during daytime</li>
+          <li>Boss creatures require special summoning items</li>
+          <li>Taming requires specific foods for each creature type</li>
+          <li>Build creature sanctuaries to farm rare materials</li>
+        </ul>
+      </div>
+
+      <div class="info-box">
+        <h3 class="info-box-title">Featured Creatures</h3>
+        <div style="display: grid; gap: 1.5rem; margin-top: 1.5rem;">
+          <div>
+            <h4 style="font-weight: 700; margin-bottom: 0.5rem; color: #ef4444;">🔥 Phoenix</h4>
+            <p style="color: #4b5563;">A majestic bird that rises from its own ashes. Drops Phoenix Feathers used for crafting powerful wings.</p>
+          </div>
+          <div>
+            <h4 style="font-weight: 700; margin-bottom: 0.5rem; color: #3b82f6;">💧 Leviathan</h4>
+            <p style="color: #4b5563;">Massive sea serpent found in deep oceans. Guards underwater temples filled with treasure.</p>
+          </div>
+          <div>
+            <h4 style="font-weight: 700; margin-bottom: 0.5rem; color: #10b981;">🌿 Forest Guardian</h4>
+            <p style="color: #4b5563;">Ancient tree spirit that protects woodland biomes. Can be befriended with golden apples.</p>
+          </div>
+          <div>
+            <h4 style="font-weight: 700; margin-bottom: 0.5rem; color: #8b5cf6;">🌙 Shadow Drake</h4>
+            <p style="color: #4b5563;">Rare dragon that only appears during new moons. Extremely dangerous but drops valuable scales.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <h3 class="info-box-title">System Requirements</h3>
+        <ul class="requirements-list">
+          <li>Minecraft Version: 1.20.1</li>
+          <li>Mod Loader: Forge 47.0.0 or higher</li>
+          <li>RAM: At least 6GB allocated (higher for best performance)</li>
+          <li>GPU: Recommended for smooth creature animations</li>
+          <li>Compatible with: OptiFine, Biomes O' Plenty, and most dimension mods</li>
+        </ul>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <h3 style="font-size: 2rem; font-weight: 700; margin-bottom: 1rem;">Join the Adventure</h3>
+        <p style="color: #4b5563; margin-bottom: 1.5rem; font-size: 1.125rem;">
+          Share your creature encounters and get tips from other players!
+        </p>
+        <a href="https://discord.gg/yourinvite" target="_blank" class="btn btn-gradient">
+          <i class="fab fa-discord"></i> Join Discord
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> BlockCraft Studios. All rights reserved.</p>
+    <p class="footer-disclaimer">Minecraft is © Mojang Studios. This site is not affiliated with Mojang.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

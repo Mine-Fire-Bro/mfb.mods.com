@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - BlockCraft Studios</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav class="nav-bar">
+    <div class="nav-container">
+      <div class="nav-content">
+        <a href="index.html" class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-cube"></i>
+          </div>
+          <span class="logo-text">BlockCraft Studios</span>
+        </a>
+        
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="mods.html" class="nav-link">All Mods</a>
+          <a href="about.html" class="nav-link active">About</a>
+          <button id="theme-toggle" class="theme-btn">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+        
+        <button id="mobile-menu-btn" class="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      
+      <div id="mobile-menu" class="mobile-menu hidden">
+        <a href="index.html" class="mobile-link">Home</a>
+        <a href="mods.html" class="mobile-link">All Mods</a>
+        <a href="about.html" class="mobile-link">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section class="mod-detail-section" style="margin-top: 64px;">
+    <div class="container">
+      <div class="section-header">
+        <h1 class="section-title">About Me</h1>
+        <p class="section-description">Learn more about the creator behind these mods</p>
+      </div>
+
+      <div style="max-width: 800px; margin: 0 auto;">
+        <div style="text-align: center; margin-bottom: 3rem;">
+          <div style="width: 150px; height: 150px; background: linear-gradient(135deg, #3C8C3C, #2d7a2d); border-radius: 50%; margin: 0 auto 2rem; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-user" style="font-size: 5rem; color: white;"></i>
+          </div>
+          <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 1rem;">Hi, I'm [Your Name]!</h2>
+          <p style="font-size: 1.125rem; color: #4b5563; line-height: 1.8;">
+            I'm a passionate Minecraft modder and YouTuber dedicated to creating fun, balanced, and innovative mods that enhance the Minecraft experience. What started as a hobby has grown into a thriving community of players who love custom content.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h3 class="info-box-title">My Journey</h3>
+          <p style="color: #4b5563; line-height: 1.8; margin-bottom: 1rem;">
+            I started modding Minecraft in [Year] and quickly fell in love with the creative possibilities. From simple tweaks to complex gameplay overhauls, I've always focused on creating mods that feel like natural extensions of the vanilla game.
+          </p>
+          <p style="color: #4b5563; line-height: 1.8;">
+            On my YouTube channel, I share tutorials, mod showcases, and behind-the-scenes looks at my development process. My goal is to inspire others to start their own modding journey and help grow the Minecraft modding community.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h3 class="info-box-title">What I Do</h3>
+          <ul class="feature-list">
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">Create custom Minecraft mods with unique features</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">Produce YouTube tutorials and mod showcases</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">Provide mod support and regular updates</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">Build and maintain an active community</span>
+            </li>
+            <li class="feature-item">
+              <i class="fas fa-check-circle feature-icon"></i>
+              <span class="feature-text">Share modding knowledge and best practices</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="community-section" style="padding: 3rem 0;">
+          <h3 class="section-title" style="font-size: 2rem; margin-bottom: 2rem;">Connect With Me</h3>
+          <div class="community-grid">
+            <div class="community-card">
+              <i class="fab fa-youtube community-icon" style="color: #dc2626;"></i>
+              <h3 class="community-title">YouTube</h3>
+              <p class="community-text">Subscribe for tutorials and mod showcases</p>
+              <a href="https://youtube.com/@MFB_Mods" target="_blank" class="community-link" style="color: #dc2626;">Subscribe Now →</a>
+            </div>
+            
+            <div class="community-card">
+              <i class="fab fa-discord community-icon" style="color: #5865f2;"></i>
+              <h3 class="community-title">Discord</h3>
+              <p class="community-text">Join our community server</p>
+              <a href="https://discord.gg/MvHVHKMr" target="_blank" class="community-link" style="color: #5865f2;">Join Server →</a>
+            </div>
+            
+            <div class="community-card">
+              <i class="fab fa-twitter community-icon" style="color: #1da1f2;"></i>
+              <h3 class="community-title">Twitter</h3>
+              <p class="community-text">Follow for updates and news</p>
+              <a href="https://twitter.com/YourHandle" target="_blank" class="community-link" style="color: #1da1f2;">Follow Me →</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; padding: 2rem; background: linear-gradient(135deg, #dbeafe, #bfdbfe); border-radius: 16px;">
+          <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;">Business Inquiries</h3>
+          <p style="color: #4b5563; margin-bottom: 1rem;">
+            For sponsorships, collaborations, or business inquiries:
+          </p>
+          <a href="mailto:contact@yourdomain.com" style="color: #3C8C3C; font-weight: 700; text-decoration: none; font-size: 1.125rem;">
+            <i class="fas fa-envelope"></i> contact@yourdomain.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> BlockCraft Studios. All rights reserved.</p>
+    <p class="footer-disclaimer">Minecraft is © Mojang Studios. This site is not affiliated with Mojang.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
