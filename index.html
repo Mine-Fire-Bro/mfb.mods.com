@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MFB Mods - Minecaft BE/PE Mods</title>
+  <title>MFB Mods - Minecraft BE/PE Mods</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
+<body class="font-inter bg-gray-50 text-gray-900">
   <!-- Navigation Bar -->
   <nav class="nav-bar">
     <div class="nav-container">
@@ -46,102 +46,95 @@
   </nav>
 
   <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-overlay"></div>
-    
-    <div class="hero-content">
-      <h1 class="hero-title">MFB Studios</h1>
-      <p class="hero-subtitle">Craft Your Adventure</p>
-      <p class="hero-description">Premium Custom Minecraft Mods • Tutorials • Active Community</p>
+  <header class="hero relative text-center py-20 bg-gradient-to-r from-orange-500 to-red-500 text-white">
+    <div class="hero-content relative z-10">
+      <h1 class="hero-title text-5xl font-extrabold mb-3">MFB Studios</h1>
+      <p class="hero-subtitle text-2xl mb-2">Craft Your Adventure</p>
+      <p class="hero-description text-lg opacity-90 mb-6">Premium Custom Minecraft Mods • Tutorials • Active Community</p>
       
-      <div class="hero-buttons">
-        <a href="https://youtube.com/@YourChannel" target="_blank" class="btn btn-youtube">
+      <div class="hero-buttons flex flex-wrap justify-center gap-4">
+        <a href="https://youtube.com/@YourChannel" target="_blank" class="btn btn-youtube bg-red-600 px-6 py-3 rounded-xl text-white hover:bg-red-700 flex items-center gap-2">
           <i class="fab fa-youtube"></i> Subscribe Now
         </a>
-        <a href="mods.html" class="btn btn-secondary">
+        <a href="mods.html" class="btn btn-secondary bg-white text-gray-800 px-6 py-3 rounded-xl hover:bg-gray-200 flex items-center gap-2">
           Browse Mods <i class="fas fa-arrow-right"></i>
         </a>
       </div>
       
-      <div class="hero-stats">
-        <div class="stat">
-          <div class="stat-number">15+</div>
-          <div class="stat-label">Mods Created</div>
+      <div class="hero-stats flex justify-center mt-10 text-white gap-8">
+        <div class="stat text-center">
+          <div class="stat-number text-3xl font-bold">15+</div>
+          <div class="stat-label opacity-80">Mods Created</div>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <div class="stat-number">50K+</div>
-          <div class="stat-label">Downloads</div>
+        <div class="stat text-center">
+          <div class="stat-number text-3xl font-bold">50K+</div>
+          <div class="stat-label opacity-80">Downloads</div>
         </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <div class="stat-number">5K+</div>
-          <div class="stat-label">Subscribers</div>
+        <div class="stat text-center">
+          <div class="stat-number text-3xl font-bold">5K+</div>
+          <div class="stat-label opacity-80">Subscribers</div>
         </div>
       </div>
-    </div>
-    
-    <div class="scroll-indicator">
-      <i class="fas fa-chevron-down"></i>
     </div>
   </header>
 
   <!-- Featured Mods Section -->
-  <section class="featured-section">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Featured Mods</h2>
-        <p class="section-description">Handcrafted experiences to enhance your Minecraft world</p>
+  <section class="featured-section py-16">
+    <div class="container mx-auto px-4">
+      <div class="section-header text-center mb-10">
+        <h2 class="section-title text-3xl font-extrabold mb-2">Featured Mods</h2>
+        <p class="section-description text-gray-600">Handcrafted experiences to enhance your Minecraft world</p>
       </div>
-      
-<div class="mods-grid">
-<!-- Epic Tools Mod -->
-<div class="mod-card mod-card-orange">
-  <div class="mod-card-image" style="position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden;">
-    <img src="images/tree-choper-mod.png" alt="Tree Chopper Mod"
-      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
-  </div>
 
-  <div class="mod-card-content">
-    <h3 class="mod-card-title">Tree Chopper Mod</h3>
-    <p class="mod-card-description">50+ powerful tools with custom enchantments</p>
+      <div class="mods-grid grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        
+        <!-- Tree Chopper Mod -->
+        <div class="mod-card rounded-2xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+          <div class="mod-card-image relative w-full aspect-[16/9]">
+            <img src="images/tree-choper-mod.png" alt="Tree Chopper Mod" class="absolute inset-0 w-full h-full object-cover">
+          </div>
 
-    <div class="mod-card-tags">
-      <span class="tag tag-green">1.20.1</span>
-      <span class="tag tag-blue">Forge</span>
-      <span class="tag tag-purple">Featured</span>
-    </div>
-
-    <a href="epic-tools.html" class="btn btn-primary btn-full">
-      View Details →
-    </a>
-  </div>
-</div>
-
-
+          <div class="mod-card-content p-5 bg-white flex flex-col justify-between">
+            <div>
+              <h3 class="mod-card-title text-xl font-bold mb-2">Tree Chopper Mod</h3>
+              <p class="mod-card-description text-gray-600 mb-4">Break one log, the whole tree falls — and a sapling replants itself!</p>
+              <div class="mod-card-tags flex flex-wrap gap-2 mb-4">
+                <span class="tag bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">1.20.1</span>
+                <span class="tag bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">PE/BE</span>
+                <span class="tag bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Featured</span>
+              </div>
+            </div>
+            <a href="tree-chopper.html" class="btn btn-primary w-full text-center bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg mt-auto">
+              View Details →
+            </a>
+          </div>
+        </div>
 
         <!-- Dimension Explorer Mod -->
-        <div class="mod-card mod-card-blue">
-          <div class="mod-card-image" style="background: linear-gradient(135deg, #3b82f6 0%, #4f46e5 100%); position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; display: flex; align-items: center; justify-content: center;">
-            <i class="fas fa-globe mod-icon"></i>
+        <div class="mod-card rounded-2xl overflow-hidden shadow-lg transition-transform hover:-translate-y-2">
+          <div class="mod-card-image relative w-full aspect-[16/9] bg-gradient-to-r from-blue-500 to-indigo-600 flex items-center justify-center">
+            <i class="fas fa-globe text-white text-5xl"></i>
           </div>
-          <div class="mod-card-content">
-            <h3 class="mod-card-title">Dimension Explorer</h3>
-            <p class="mod-card-description">Travel to 5 brand new dimensions filled with unique biomes and challenges.</p>
-            <div class="mod-card-tags">
-              <span class="tag tag-green">1.21.100+</span>
-              <span class="tag tag-blue">PE/BE</span>
-              <span class="tag tag-red">New</span>
+
+          <div class="mod-card-content p-5 bg-white flex flex-col justify-between">
+            <div>
+              <h3 class="mod-card-title text-xl font-bold mb-2">Dimension Explorer</h3>
+              <p class="mod-card-description text-gray-600 mb-4">Travel to 5 brand new dimensions filled with unique biomes and challenges.</p>
+              <div class="mod-card-tags flex flex-wrap gap-2 mb-4">
+                <span class="tag bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">1.21.100+</span>
+                <span class="tag bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">PE/BE</span>
+                <span class="tag bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm">New</span>
+              </div>
             </div>
-            <a href="dimension-explorer.html" class="btn btn-primary btn-full">
-              <i class="fas fa-info-circle"></i> View Details
+            <a href="dimension-explorer.html" class="btn btn-primary w-full text-center bg-blue-600 hover:bg-blue-700 text-white py-2 rounded-lg mt-auto">
+              View Details →
             </a>
           </div>
         </div>
       </div>
 
-      <div class="section-cta">
-        <a href="mods.html" class="btn btn-gradient">
+      <div class="section-cta text-center mt-12">
+        <a href="mods.html" class="btn btn-gradient bg-gradient-to-r from-orange-500 to-red-500 text-white px-6 py-3 rounded-xl inline-flex items-center gap-2">
           View All Mods <i class="fas fa-arrow-right"></i>
         </a>
       </div>
@@ -149,43 +142,44 @@
   </section>
 
   <!-- Community Section -->
-  <section class="community-section">
-    <div class="container">
-      <h2 class="section-title">Join Our Community</h2>
-      <p class="section-description">Connect with thousands of Minecraft enthusiasts</p>
+  <section class="community-section py-16 bg-gray-100">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="section-title text-3xl font-extrabold mb-3">Join Our Community</h2>
+      <p class="section-description text-gray-600 mb-10">Connect with thousands of Minecraft enthusiasts</p>
       
-      <div class="community-grid">
-        <div class="community-card">
-          <i class="fab fa-youtube community-icon" style="color: #dc2626;"></i>
-          <h3 class="community-title">YouTube</h3>
-          <p class="community-text">Watch tutorials and mod showcases</p>
-          <a href="https://youtube.com/@MFB_Mods" target="_blank" class="community-link">Subscribe Now →</a>
+      <div class="community-grid grid gap-8 sm:grid-cols-3">
+        <div class="community-card bg-white p-6 rounded-2xl shadow-md">
+          <i class="fab fa-youtube community-icon text-4xl mb-3 text-red-600"></i>
+          <h3 class="community-title text-xl font-bold mb-2">YouTube</h3>
+          <p class="community-text text-gray-600 mb-3">Watch tutorials and mod showcases</p>
+          <a href="https://youtube.com/@MFB_Mods" target="_blank" class="community-link text-blue-600 font-medium">Subscribe Now →</a>
         </div>
         
-        <div class="community-card">
-          <i class="fab fa-discord community-icon" style="color: #5865f2;"></i>
-          <h3 class="community-title">Discord</h3>
-          <p class="community-text">Chat with the community 24/7</p>
-          <a href="https://discord.gg/MvHVHKMr"_blank" class="community-link">Join Server →</a>
+        <div class="community-card bg-white p-6 rounded-2xl shadow-md">
+          <i class="fab fa-discord community-icon text-4xl mb-3 text-indigo-600"></i>
+          <h3 class="community-title text-xl font-bold mb-2">Discord</h3>
+          <p class="community-text text-gray-600 mb-3">Chat with the community 24/7</p>
+          <a href="https://discord.gg/MvHVHKMr" target="_blank" class="community-link text-blue-600 font-medium">Join Server →</a>
         </div>
         
-        <div class="community-card">
-          <i class="fab fa-twitter community-icon" style="color: #1da1f2;"></i>
-          <h3 class="community-title">Twitter</h3>
-          <p class="community-text">Get the latest updates first</p>
-          <a href="https://twitter.com/YourHandle" target="_blank" class="community-link">Follow Us →</a>
+        <div class="community-card bg-white p-6 rounded-2xl shadow-md">
+          <i class="fab fa-twitter community-icon text-4xl mb-3 text-sky-500"></i>
+          <h3 class="community-title text-xl font-bold mb-2">Twitter</h3>
+          <p class="community-text text-gray-600 mb-3">Get the latest updates first</p>
+          <a href="https://twitter.com/YourHandle" target="_blank" class="community-link text-blue-600 font-medium">Follow Us →</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer py-6 text-center bg-gray-900 text-gray-400">
     <p>&copy; <span id="year"></span> MFB Studios. All rights reserved.</p>
-    <p class="footer-disclaimer">Minecraft is © Mojang Studios. This site is not affiliated with Mojang.</p>
+    <p class="footer-disclaimer text-sm mt-2">Minecraft is © Mojang Studios. This site is not affiliated with Mojang.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
-
 </html>
