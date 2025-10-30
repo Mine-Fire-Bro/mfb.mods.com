@@ -3,37 +3,42 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
+  padding: 1rem;
 }
 
+/* Mod Card Base */
 .mod-card {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s;
+  transition: all 0.3s ease;
   aspect-ratio: 32 / 27;
   display: flex;
   flex-direction: column;
+  background-color: #111827; /* fallback if no gradient */
+  color: #f9fafb;
 }
 
 .mod-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
 }
 
-.mod-card-orange {
-  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+/* Color Themes (Fixed Contrast) */
+.mod-card-orange .mod-card-image {
+  background: linear-gradient(135deg, #fb923c 0%, #dc2626 100%);
 }
 
-.mod-card-purple {
-  background: linear-gradient(135deg, #fae8ff 0%, #f3e8ff 100%);
+.mod-card-purple .mod-card-image {
+  background: linear-gradient(135deg, #a855f7 0%, #7e22ce 100%);
 }
 
-.mod-card-blue {
-  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+.mod-card-blue .mod-card-image {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
 }
 
+/* Image Section */
 .mod-card-image {
-  /* Remove fixed height, use aspect ratio instead */
   width: 100%;
   aspect-ratio: 16 / 9;
   display: flex;
@@ -42,34 +47,68 @@
   flex-shrink: 0;
 }
 
+/* Icon inside image */
 .mod-icon {
-  color: white;
+  color: #ffffff;
   font-size: 5rem;
   animation: float 3s ease-in-out infinite;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Card Content */
 .mod-card-content {
+  background-color: #1f2937;
   padding: 1.5rem;
   flex: 1;
   display: flex;
   flex-direction: column;
+  color: #f9fafb;
 }
 
+/* Title */
 .mod-card-title {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
+  color: #ffffff;
 }
 
+/* Description */
 .mod-card-description {
-  color: #4b5563;
+  color: #d1d5db;
   margin-bottom: 1rem;
   flex-grow: 1;
 }
 
+/* Tags section */
 .mod-card-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 1.25rem;
+}
+
+/* Tag Style */
+.mod-card-tags span {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 0.35rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  color: #f3f4f6;
+}
+
+/* Responsive improvement */
+@media (max-width: 480px) {
+  .mod-card-title {
+    font-size: 1.25rem;
+  }
+  .mod-icon {
+    font-size: 4rem;
+  }
 }
